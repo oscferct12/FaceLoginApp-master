@@ -23,7 +23,7 @@ namespace FaceLoginApp.Paginas
             Loading(true);
             await Task.Delay(5000);
             Loading(false);
-            await Navigation.PushAsync(new TabPageRegister());
+            await Navigation.PushAsync(new PaginaCrearEmpresa());
         }
 
         void Loading(bool mostrar)
