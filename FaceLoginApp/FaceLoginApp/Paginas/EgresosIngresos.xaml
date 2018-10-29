@@ -4,20 +4,20 @@
              x:Class="FaceLoginApp.Paginas.EgresosIngresos">
     <ContentPage.Content>
         <StackLayout Padding="15">
-            <Label Text="Nombre: " TextColor="Black" FontSize="Large"/>
-            <Entry x:Name="txtNombre" TextColor="Black" Text="{Binding Nombre}" 
+            <Label Text="Ingresos Mensuales: " TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="txtIngresos" TextColor="Black" Text="{Binding Nombre}" 
                        Placeholder="Ingreso Mensual" 
                         BackgroundColor="White" FontSize="Medium"/>
-            <Label Text="Cédula: " TextColor="Black" FontSize="Large"/>
-            <Entry x:Name="txtCedula" TextColor="Black" Text="{Binding Cedula}" 
+            <Label Text="Otros Ingresos: " TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="txtOtrosIngresos" TextColor="Black" Text="{Binding Cedula}" 
                        Placeholder="Otros Ingresos" 
                         BackgroundColor="White" FontSize="Medium"/>
-            <Label Text="Dirección: " TextColor="Black" FontSize="Large"/>
-            <Entry x:Name="txtDireccion" TextColor="Black" Text="{Binding Direccion}" 
+            <Label Text="Egresos: " TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="txtEgresos" TextColor="Black" Text="{Binding Direccion}" 
                        Placeholder="Egresos" 
                         BackgroundColor="White" FontSize="Medium"/>
-            <Label Text="Teléfono: " TextColor="Black" FontSize="Large"/>
-            <Entry x:Name="txtTelefono" TextColor="Black" Text="{Binding Telefono}" 
+            <Label Text="Otros Egresos: " TextColor="Black" FontSize="Large"/>
+            <Entry x:Name="txtOtrosEgresos" TextColor="Black" Text="{Binding Telefono}" 
                        Placeholder="Otros Egresos" 
                         BackgroundColor="White" FontSize="Medium"/>
         </StackLayout>
