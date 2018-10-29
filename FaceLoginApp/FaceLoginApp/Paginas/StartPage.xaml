@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FaceLoginApp.Paginas.StartPage">
+    
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+        <StackLayout IsVisible="True" Padding="12"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+
+            <Image Source="https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0027/5737/Demo.png?1498672363"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+            <ActivityIndicator x:Name="Indicador" Color="Green" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label Text="Loading..." HorizontalOptions="Center" TextColor="Green"/>
+
+        </StackLayout>
+
+    </AbsoluteLayout>
+</ContentPage>

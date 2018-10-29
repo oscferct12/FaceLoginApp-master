@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FaceLoginApp.Paginas.PaginaCrearEmpresa"
+             xmlns:local="clr-namespace:FaceLoginApp.Behavior">
+    <ContentPage.Content>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <Label Text="Registrar Empresa" TextColor="Black" FontSize="Large" Margin="15"/>
+                <StackLayout Padding="15">
+                    <Label Text="Nombre empresa: " TextColor="Black" FontSize="Large"/>
+                    <Entry x:Name="txtNombreEmpresa" TextColor="Black" Text="{Binding NombreEmpresa}" 
+                       Placeholder="Ingrese nombre de la empresa" 
+                         FontSize="Medium" />
+                    <Label Text="Nombre area de la empresa: " TextColor="Black" FontSize="Large"/>
+                    <Entry x:Name="txtArea" TextColor="Black" Text="{Binding NombreArea}" 
+                       Placeholder="Ingrese área" 
+                         FontSize="Medium"/>
+                    <Label Text="Descripción: " TextColor="Black" FontSize="Large"/>
+                    <Entry x:Name="txtDescripcion" TextColor="Black" Text="{Binding Descripcion}" 
+                       Placeholder="Ingrese dirección de domicilio" 
+                         FontSize="Medium"/>
+                </StackLayout>
+                <ActivityIndicator x:Name="Indicador" Color="Green" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="lblLoading" Text="Loading..." HorizontalOptions="Center" TextColor="Green" IsVisible="False"/>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnCrearEmpresa" Text="Crear Empresa" Order="Primary" Priority="0" Clicked="btnCrearEmpresa_Clicked" Icon="Create.png"/>
+        <ToolbarItem x:Name="btnLogin" Text="Login" Order="Default" Priority="0" Clicked="btnLogin_Clicked" Icon="Login.png"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FaceLoginApp.Paginas.PaginaRegistro">
+    <ContentPage.Content>
+        <ScrollView IsVisible="True">
+            <StackLayout BackgroundColor="White">
+                <Label Text="Registrar usuario" TextColor="Black" FontSize="Large" Margin="15"/>
+                <StackLayout Padding="15">
+                    <Label Text="Nombre: " TextColor="Black" FontSize="Large"/>
+                    <Entry x:Name="txtNombre" TextColor="Black" Text="{Binding Nombre}" 
+                       Placeholder="Ingrese nombre del usuario" 
+                        BackgroundColor="White" FontSize="Medium"/>
+                    <Label Text="Cédula: " TextColor="Black" FontSize="Large"/>
+                    <Entry x:Name="txtCedula" TextColor="Black" Text="{Binding Cedula}" 
+                       Placeholder="Ingrese cédula" 
+                        BackgroundColor="White" FontSize="Medium"/>
+                    <Label Text="Dirección: " TextColor="Black" FontSize="Large"/>
+                    <Entry x:Name="txtDireccion" TextColor="Black" Text="{Binding Direccion}" 
+                       Placeholder="Ingrese dirección de domicilio" 
+                        BackgroundColor="White" FontSize="Medium"/>
+                    <Label Text="Teléfono: " TextColor="Black" FontSize="Large"/>
+                    <Entry x:Name="txtTelefono" TextColor="Black" Text="{Binding Telefono}" 
+                       Placeholder="Ingrese el teléfono" 
+                        BackgroundColor="White" FontSize="Medium"/>
+                </StackLayout>
+
+                <StackLayout Padding="5" Orientation="Vertical">
+                    <Image x:Name="imagen1" WidthRequest="100" HeightRequest="100" Margin="5" />
+                    <Image x:Name="imagen2" WidthRequest="100" HeightRequest="100" Margin="5" />
+                    <Image x:Name="imagen3" WidthRequest="100" HeightRequest="100" Margin="5" />
+                </StackLayout>
+
+                <ActivityIndicator x:Name="indicator" Color="Green" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnTomarFoto" Text="Foto" Order="Primary" Priority="0" Clicked="btnTomarFoto_Clicked"/>
+        <ToolbarItem x:Name="btnRegistrar" Text="Registrar" Order="Primary" Priority="0" Clicked="btnRegistrar_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>
